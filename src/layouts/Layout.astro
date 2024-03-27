@@ -1,0 +1,26 @@
+---
+
+import TopHeaderMenu from '../components/TopHeaderMenu.jsx';
+
+
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+<body class="text-[1rem]">
+<div class="flex flex-col min-h-screen">
+    <TopHeaderMenu client:load endpoint=`jsonapi/menu_items/top-header` />
+    <main class="flex-1 pb-10 bg-body">
+        <slot />
+    </main>
+    <footer>
+    </footer>
+</div>
+</body>
+</html>
