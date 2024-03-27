@@ -1,5 +1,4 @@
 import YoutubeEmbed from './YoutubeEmbed.jsx';
-import './YoutubeBlock.scss';
 import useDrupalData from "../api/api.js";
 
 export default function YoutubeBlock({endpoint}) {

@@ -1,4 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import YoutubeBlock from "../components/YoutubeBlock";
 ---
-    <Layout client:load/>
+<Layout title="Home">
+   <YoutubeBlock client:load endpoint="jsonapi/block_content/block_link/30d6c8b4-fee2-4975-87c6-d88697465050"/>
+</Layout>
